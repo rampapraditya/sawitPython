@@ -4,7 +4,7 @@ from keras import Sequential
 
 
 class PalmMaturityModel:
-    def __init__(self, input_shape=(150, 150, 3), num_classes=3):
+    def __init__(self, input_shape=(150, 150, 3), num_classes=5):
         self.model = Sequential([
             Conv2D(32, (3, 3), activation='relu', input_shape=input_shape),
             MaxPooling2D(2, 2),

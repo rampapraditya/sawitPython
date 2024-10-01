@@ -4,7 +4,7 @@ from scripts.classifier import Classifier
 
 # Path dataset dan model
 dataset_dir = 'dataset/'
-model_save_path = 'models/palm_maturity_model1.keras'
+model_save_path = 'models/palm_maturity_model.keras'
 
 # Initialize DataLoader
 data_loader = DataLoader(dataset_dir)
@@ -14,10 +14,10 @@ train_data = data_loader.load_train_data()
 val_data = data_loader.load_val_data()
 
 # Inisialisasi model
-palm_model = PalmMaturityModel(input_shape=(150, 150, 3), num_classes=3)
+palm_model = PalmMaturityModel(input_shape=(150, 150, 3), num_classes=5)
 
 # Latih model
-history = palm_model.train(train_data, val_data, epochs=10)
+history = palm_model.train(train_data, val_data, epochs=150)
 
 # Simpan model yang telah dilatih
 palm_model.save_model(model_save_path)
@@ -30,5 +30,6 @@ test_image_path = 'dataset/Ripe/1.png'  # Path ke gambar uji
 predicted_class = classifier.predict(test_image_path)
 
 # Menampilkan hasil prediksi
-labels = ['Ripe', 'UnderRipe', 'Unripe']
+
+labels = ['Empty', 'OverRipe', 'Ripe', 'UnderRip', 'Unripe']
 print(f"Prediksi Tingkat Kematangan: {labels[predicted_class]}")
