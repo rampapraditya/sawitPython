@@ -4,3 +4,4 @@ matplotlib
 scikit-learn~=1.5.2
 Pillow
 keras~=2.13.1
+opencv-python
