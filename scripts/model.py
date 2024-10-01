@@ -18,9 +18,9 @@ class PalmMaturityModel:
             Dense(num_classes, activation='softmax')
         ])
 
-        self.model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['categorical_accuracy'])
+        self.model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
 
-    def train(self, train_data, val_data, epochs=10):
+    def train(self, train_data, val_data, epochs=150):
         history = self.model.fit(
             train_data,
             validation_data=val_data,
