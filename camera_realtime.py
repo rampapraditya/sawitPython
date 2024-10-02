@@ -18,7 +18,10 @@ model = palm_model.load_model(model_save_path)
 classifier = Classifier(model)
 
 # Menggunakan kamera untuk menangkap gambar real-time
-cap = cv2.VideoCapture(0)
+# cap = cv2.VideoCapture(0)
+
+# Menggunakan kamera sumber video
+cap = cv2.VideoCapture("C:/Users/Pc Mobile 08/Desktop/Ripe/vripe3.mp4")
 
 if not cap.isOpened():
     print("Error: Kamera tidak dapat dibuka.")
