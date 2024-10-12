@@ -1,8 +1,8 @@
 import tensorflow as tf
 
 # Path ke model yang telah dilatih
-model_save_path = 'models/palm_maturity_model.keras'
-tflite_model_save_path = 'models/model.tflite'
+model_save_path = '../models/palm_maturity_model.keras'
+tflite_model_save_path = '../models/model.tflite'
 
 # Memuat model TensorFlow yang telah dilatih
 model = tf.keras.models.load_model(model_save_path)

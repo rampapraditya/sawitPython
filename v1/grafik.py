@@ -4,8 +4,8 @@ from scripts.model import PalmMaturityModel
 from scripts.classifier import Classifier
 
 # Path dataset dan model
-dataset_dir = 'dataset/'
-model_save_path = 'models/palm_maturity_model.h5'
+dataset_dir = '../dataset/'
+model_save_path = '../models/palm_maturity_model.h5'
 
 # Initialize DataLoader
 data_loader = DataLoader(dataset_dir)

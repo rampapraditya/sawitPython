@@ -5,7 +5,7 @@ from scripts.model import PalmMaturityModel
 from scripts.classifier import Classifier
 
 # Path ke model yang sudah dilatih
-model_save_path = 'models/palm_maturity_model.keras'
+model_save_path = '../models/palm_maturity_model.keras'
 
 # Label untuk kategori kematangan buah sawit
 labels = ['Empty', 'OverRipe', 'Ripe', 'UnderRip', 'Unripe']
