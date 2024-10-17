@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Hai</folder>
+	<filename>Hai.3532c76e-8c61-11ef-8c21-d843ae408ab3.jpg</filename>
+	<path>D:\project\python\Palm1\v2\Tensorflow\collectedimages\Hai\Hai.3532c76e-8c61-11ef-8c21-d843ae408ab3.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>480</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Hai</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>99</xmin>
+			<ymin>133</ymin>
+			<xmax>189</xmax>
+			<ymax>250</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -4,11 +4,11 @@ import os
 import time
 
 # menentukan jenis-jenis tingkat matangan
-labels = ['Empty', 'OverRipe', 'Ripe', 'UnderRip', 'Unripe']
-number_images = 20
+labels = ['Hai', 'Peace']
+number_images = 5
 
 # folder PATH
-IMAGES_PATH = "Tensorflow/collectedimages"
+IMAGES_PATH = "Tensorflow/workspace/images/collectedimages"
 
 # Check if IMAGES_PATH exists, if not create it
 if not os.path.exists(IMAGES_PATH):
